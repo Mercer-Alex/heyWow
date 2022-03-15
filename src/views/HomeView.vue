@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
     <div v-for="post in posts" v-bind:key="post.id">
       <hr>
       <div class="post">
@@ -26,3 +25,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+
+
+</style>
