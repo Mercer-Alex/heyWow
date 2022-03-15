@@ -8,9 +8,9 @@ let data = {
   currentID: 2,
   posts: [{
     id: 1,
-    text: 'I love the outdoors, and the smell of rain. I can show you great hikes',
-    name: 'Emma Khul',
-    contact: '555-555-hike'
+    text: 'I hefe-a a nuo restuoruont zeet hes zee-a best meetbells! Bork Bork Bork!',
+    name: 'Swedish Chef',
+    contact: '555-555-bork'
   }],
   getPosts() {
     return this.posts;

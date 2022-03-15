@@ -9,9 +9,9 @@
     </nav>
     <router-view/>
     <footer id="fixed" class="footer-styles">
-      <i class="fa-brands fa-github"></i>
-      <i class="fa-brands fa-linkedin-in"></i>
-      <i class="fa-solid fa-envelope"></i>
+      <a href="https://github.com/Mercer-Alex/heyWow" rel="noopener" target="_blank"><i class="fa-brands fa-github"></i></a>   
+      <a href="https://www.linkedin.com/in/mercer-alex/" rel="noopener" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>   
+      <a href="mailto:a.mercer118@gmail.com" rel="noopener" target="_blank"><i class="fa-solid fa-envelope"></i></a>       
     </footer>
   </div>
 </template>
@@ -70,6 +70,9 @@ footer i {
 }
 footer i:hover {
   color: #af8eb5
+}
+footer a {
+  color: white;
 }
 #fixed {
 position:fixed;
