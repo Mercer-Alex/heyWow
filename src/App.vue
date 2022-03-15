@@ -6,10 +6,9 @@
       <router-link to="/add"><i class="fa-solid fa-plus"></i></router-link>
       <router-link to="/about"><i class="fa-solid fa-circle-info"></i></router-link> 
       <router-link to="/user"><i class="fa-solid fa-user"></i></router-link>
-  
     </nav>
     <router-view/>
-    <footer class="footer-styles">
+    <footer id="fixed" class="footer-styles">
       <i class="fa-brands fa-github"></i>
       <i class="fa-brands fa-linkedin-in"></i>
       <i class="fa-solid fa-envelope"></i>
@@ -22,6 +21,10 @@ export default {
 }
 </script>
 <style>
+
+html {
+  background: #121212;
+}
 
 body {
   margin: 0;
@@ -61,12 +64,17 @@ footer {
   justify-content: space-evenly;
   align-content: center;
   padding: 15px;
-  position: 0;
 }
 footer i {
   font-size: 25px;
 }
 footer i:hover {
   color: #af8eb5
+}
+#fixed {
+position:fixed;
+bottom:0;
+left: 0;
+right: 0;
 }
 </style>

@@ -8,17 +8,19 @@ let data = {
   currentID: 2,
   posts: [{
     id: 1,
-    text: 'I love the outdoors, and the smell of rain',
-    name: 'Emma Khul'
+    text: 'I love the outdoors, and the smell of rain. I can show you great hikes',
+    name: 'Emma Khul',
+    contact: '555-555-hike'
   }],
   getPosts() {
     return this.posts;
   },
-  addPost(name, text) {
+  addPost(name, text, contact) {
     this.posts.push({
       id: this.currentID,
       name: name,
-      text: text
+      text: text,
+      contact: contact,
     });
     this.currentID += 1;
   }

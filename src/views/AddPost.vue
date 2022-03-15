@@ -6,18 +6,17 @@
         <p>Include your contact info if you want people to reach out to you</p>
     </div>
     
-
   <form class="post-form" v-if="creating" @submit.prevent="addPost">
     <input class="post-name" v-model="name" placeholder="Name">
     <p></p>
     <textarea class="post-content" v-model="post" placeholder="type here"></textarea>
     <br />
-    <input class="post-contact" v-model="contact" placeholder="email">
+    <input class="post-contact" v-model="contact" placeholder="contact">
     <br>
     <button class="post-submit" type="submit">Submit</button>
   </form>
   <div v-else>
-    <p>Thank you for submitting a post!.</p>
+    <p>Thank you for submitting a post!</p>
     <p><a @click="toggleForm" href="#">Post something else</a></p>
   </div>
 </div>
@@ -31,6 +30,7 @@ export default {
       creating: true,
       name: '',
       post: '',
+      contact: '',
     }
   },
   methods: {
@@ -38,9 +38,10 @@ export default {
       this.creating = !this.creating;
     },
     addPost() {
-      this.$root.$data.addPost(this.name, this.post);
+      this.$root.$data.addPost(this.name, this.post, this.contact);
       this.name = "";
       this.post = "";
+      this.contact= "";
       this.creating = false;
     },
   }
